@@ -1,10 +1,10 @@
 // Assignment 1: Student Marks Analyzer
 
 // Step 1 and 2 :--Store student details ,marks ,roll number , department
-let name = "Rahul Kumar";          // string
-let rollNo = 101;                  // number
-let department = "Computer Science"; // string
-let marks = [78, 85, 62, 91, 34];  //array 
+let name = "Rahul Kumar";         
+let rollNo = 101;                  
+let department = "Computer Science";
+let marks = [78, 85, 62, 91, 34];  
 
 // step 3:-- total marks
 function calculateTotal(marks) {
@@ -18,8 +18,8 @@ function calculateTotal(marks) {
 
 // Step 4: Percentage (each subject is out of 100)
 function calculatePercentage(marks) {
-  let obtainedMarks = calculateTotal(marks);  // jitne mila marks
-  let totalMarks = 500;                       // total 500
+  let obtainedMarks = calculateTotal(marks);  
+  let totalMarks = 500;                       // total 5 subject ka ful marks 500 
   let percentage = (obtainedMarks / totalMarks) * 100;//peercentage formula
   return percentage;
 }
