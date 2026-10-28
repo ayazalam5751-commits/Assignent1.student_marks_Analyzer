@@ -19,8 +19,8 @@ function calculateTotal(marks) {
 // Step 4: Percentage (each subject is out of 100)
 function calculatePercentage(marks) {
   let obtainedMarks = calculateTotal(marks);  
-  let totalMarks = 500;                       // total 5 subject ka ful marks 500 
-  let percentage = (obtainedMarks / totalMarks) * 100;//peercentage formula
+  let totalMarks = 500;                      
+  let percentage = (obtainedMarks / totalMarks) * 100;
   return percentage;
 }
 // console.log("Percentage: " + calculatePercentage(marks) + "%");
@@ -29,8 +29,8 @@ function calculatePercentage(marks) {
 function findHighest(marks) {
   let highest = marks[0];            
   for (let i = 1; i < marks.length; i++) {
-    if (marks[i] > highest) {        // check highest se bara hai ki nhi
-      highest = marks[i];            // highest to upgrade krdo
+    if (marks[i] > highest) {        
+      highest = marks[i];            
     }
   }
 
@@ -43,8 +43,8 @@ function findLowest(marks) {
   let lowest = marks[0];             
 
   for (let i = 1; i < marks.length; i++) {
-    if (marks[i] < lowest) {         // check lowest se chotha hai ki nhi
-      lowest = marks[i];             // lowest ko update kr di
+    if (marks[i] < lowest) {         
+      lowest = marks[i];             
     }
   }
 
@@ -57,7 +57,7 @@ function findLowest(marks) {
 function countPassed(marks) {
   let count = 0;
   for (let i = 0; i < marks.length; i++) {
-    if (marks[i] >= 40) {// check 40 se zada score kiye hai ki nhi 
+    if (marks[i] >= 40) {
       count++;
     }
   }
@@ -66,8 +66,8 @@ function countPassed(marks) {
 // console.log("Subjects Passed: " + countPassed(marks));
 
 // Step 8:-- Uppercase name and character count
-let upperName = name.toUpperCase();   // name ko capital letter me
-let nameLength = name.length;         // name character ki length
+let upperName = name.toUpperCase();   
+let nameLength = name.length;         
 // console.log("Student: " + upperName);
 // console.log("Namelength: " + nameLength);
 
